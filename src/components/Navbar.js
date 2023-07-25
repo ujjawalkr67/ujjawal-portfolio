@@ -94,7 +94,7 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                href="https://hashnode.com/@ujjawalkr67"
+                href="https://ujjawalkr.hashnode.dev/"
                 target="_blank"
                 rel="noreferrer"
               >
