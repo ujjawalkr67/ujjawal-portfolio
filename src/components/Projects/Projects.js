@@ -5,9 +5,9 @@ import Particle from "../Particle";
 import Research from "../../Assets/Projects/research.png";
 import raem from "../../Assets/Projects/Raem.png";
 import hackfeds from "../../Assets/Projects/hackfed.png";
-// import leaf from "../../Assets/Projects/leaf.png";
-// import emotion from "../../Assets/Projects/emotion.png";
-// import suicide from "../../Assets/Projects/suicide.png";
+import fusion from "../../Assets/Projects/codefusion.png";
+import emotion from "../../Assets/Projects/emotion.png";
+import fresh from "../../Assets/Projects/freshbite.png";
 
 function Projects() {
   return (
@@ -21,14 +21,26 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+
+           <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={fusion}
+              isBlog={false}
+              title="Code-Fusion"
+              description="**Code Fusion** is an innovative project that leverages WebSocket.io to enable real-time collaboration among users. It features an integrated chat application, allowing team members to communicate seamlessly, and a built-in compiler for running code directly within the platform. This combination creates a dynamic environment for collaborative coding and efficient project management."
+              ghLink="https://github.com/ujjawalkr67/CodeCollab"
+              demoLink="https://code-fusion1.vercel.app/"
+            />
+          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={raem}
+              imgPath={fresh}
               isBlog={false}
-              title="RAEM"
-              description="RAEM is the website for the new course of our Gautam Buddha University. RAEM is connected with the official website of our University. "
-              demoLink="http://raem.gbu.ac.in/"
-              // ghLink="#"
+              title="Fresh Bite"
+              description="**Fresh Bite** is a dynamic burger ordering platform designed for a burger company. Built using React and styled with Tailwind CSS, it offers a seamless and visually appealing user experience. The project integrates with an API to manage orders efficiently, ensuring a smooth and responsive service for customers."
+              ghLink="https://github.com/ujjawalkr67/Fresh-Bites"
+             demoLink="https://fresh-bites-ashy.vercel.app/"// <--------Please include a demo link here
             />
           </Col>
 
@@ -45,6 +57,17 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={raem}
+              isBlog={false}
+              title="RAEM"
+              description="RAEM is the website for the new course of our Gautam Buddha University. RAEM is connected with the official website of our University. "
+              demoLink="http://raem.gbu.ac.in/"
+              // ghLink="#"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={Research}
               isBlog={false}
               title="Research By learning"
@@ -54,29 +77,7 @@ function Projects() {
             />
           </Col>
 
-
-          {/* <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={leaf}
-              isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col>
-
+{/* 
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={emotion}
@@ -87,7 +88,7 @@ function Projects() {
               ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
               // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
             />
-          </Col> */}
+          </Col>  */}
 
         </Row>
       </Container>
