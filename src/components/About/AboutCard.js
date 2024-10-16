@@ -10,7 +10,7 @@ function AboutCard() {
           <p style={{ textAlign: "justify" }}>
             Hi Everyone, I am <span className="purple">Ujjawal Kumar </span>
             from <span className="purple"> Jharkhand, India.</span>
-            <br /> I am a fourth year student pursuing an Integrated Btech-Mtech
+            <br /> I am a fifth year student pursuing an Integrated Btech-Mtech
             in Computer Science at Gautam Buddha University ,Greater Noida.
             {/* <br />
             Additionally, I am currently employed as a software developer at
